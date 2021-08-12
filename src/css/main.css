@@ -2100,7 +2100,7 @@ template {
 }
 
 .menu-section {
-  background: url(/src/img/menuback.png) center center/cover no-repeat;
+  background: url(../img/menuback.png) center center/cover no-repeat;
   position: relative;
 }
 .menu-section__title {

@@ -249,8 +249,8 @@ const display = $(".wrapper__content");
 const sideMenu = $(".fixed-menu");
 const menuItems = sideMenu.find(".fixed-menu__item");
 
-// const mobileDetect = new MobileDetect(window.navigator.userAgent);
-// const isMobile = mobileDetect.mobile();
+const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const isMobile = mobileDetect.mobile();
 
 
 let inScroll = false;
@@ -377,7 +377,7 @@ $("[data-scroll-to]").click(e => {
 
   performTransition(reqSection.index());
 });
-
+if (isMobile) {
   $("body").swipe({
 
     swipe: function (event, direction) {
@@ -390,7 +390,7 @@ $("[data-scroll-to]").click(e => {
       scroller[scrollDirection]();
     },
   });
-
+}
 
 const verticalAcc = () => {
   const links = document.querySelectorAll(".menu-section__trigger");
