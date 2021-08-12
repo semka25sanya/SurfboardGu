@@ -1,0 +1,102 @@
+.form {
+  background:url(../../img/review.background.jpg) center center/cover no-repeat;
+  color: #FFFFFF;
+  display: flex;
+  
+
+// &__wrapper {
+  
+//   height: rem(652px);
+// width: rem(1100px);
+// }
+
+&__title-main {
+  font-weight: bold;
+font-size: rem(48px);
+color:#fff;
+text-transform: uppercase;
+text-align: center;
+padding-top: rem(60px);
+@include tablets {
+  padding-top: 0;
+}
+
+}
+
+&__content {
+  padding: rem(82px);
+  display: flex;
+  /* margin-bottom: rem(68px); */
+  @include tablets {
+    flex-direction: column;
+    width: rem(610px);
+    padding: rem(82px) rem(82px) 0 rem(82px);
+
+  }
+  @include phones {
+    padding:rem(47px) ;
+  }
+}
+&__col {
+  flex: 1;
+  margin-right: rem(25px);
+  @include tablets {
+    margin-right: 0;
+  }
+  
+
+&:last-child {
+  margin-right: 0;
+}
+}
+&__row {
+  display: flex;
+  margin-bottom: rem(18px);
+}
+&__block {
+  flex: 1;
+  margin-right: rem(20px);
+  &:last-child {
+    margin-right: 0;
+  }
+}
+&__input {
+  width: 100%;
+  border: none;
+  padding: rem(18px) rem(11px);
+  border: solid rem(3px) transparent;
+  border-radius: rem(4px);
+  &:focus {
+    border-color: #FEDB3F;
+    outline: none;
+  }
+  @include tablets {
+    padding: rem(8px) rem(10px);
+  }
+}
+&__input--textarea {
+  height: rem(160px);
+  resize: none;
+  @include tablets {
+    height: rem(82px);
+  }
+}
+
+
+
+&__controls {
+  display: flex;
+  flex-wrap: wrap;
+  @include phones {
+    justify-content: center;
+  }
+}
+&__buttons {
+  margin-top: rem(47px);
+
+  @include tablets {
+    display: flex;
+    justify-content: center;
+  }
+}
+}

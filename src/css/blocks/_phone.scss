@@ -1,0 +1,37 @@
+.phone {
+  
+  text-decoration: none;
+  font-weight: bold;
+font-size: rem(22px);
+white-space: nowrap;
+
+@include phones {
+  // font-size: rem(18px)
+}
+
+&--normal {
+  font-weight: normal;
+font-size: rem(21px);
+}
+   .phone__number {
+     display: flex;
+
+   }
+
+&__icon {
+
+    margin-right: rem(2px);
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+
+    &--header {
+      margin-top: 5px;
+      margin-right: 5px;
+      @include tablets {
+        display: none;
+      }
+    }
+
+}
+}

@@ -1,0 +1,27 @@
+.button {
+  color: #000;
+  background-color: #FEDB3F;
+  border-radius: rem(100px);
+  padding: rem(21px) rem(41px);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+font-size: rem(16px);
+margin-bottom: rem(85px);
+border: transparent;
+@include tablets {
+  margin-bottom: 0;
+}
+&--product {
+  margin-bottom: 0;
+  
+}
+&--transparent {
+  background: transparent;
+  color: #fff;
+}
+&:hover {
+  background-color:#fff ;
+  color: #FEDB3F;
+}
+}

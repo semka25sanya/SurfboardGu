@@ -1,0 +1,45 @@
+.product__parameters:hover .parameters-hover {
+  opacity: 1;
+  pointer-events: all;
+
+}
+ .parameters-hover{
+  position: absolute;
+width: 273px;
+height: 291px;
+background: rgba(255, 255, 255, 0.8); 
+box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+border-radius: 4px;
+font-weight: 500;
+font-size: rem(16px);
+display: flex;
+color: #000;
+padding:20px 30px;
+justify-content: space-between;
+left: 100%;
+opacity: 0;
+pointer-events: none;
+&__list {
+  display: flex;
+  flex-direction: column;
+}
+&__item {
+  display: flex;
+  align-items: center;
+}
+&__img {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+&__right--list {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+&__right--item {
+  padding: 16px 0;
+  font-style: normal;
+font-weight: normal;
+}
+}

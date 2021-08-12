@@ -1,0 +1,39 @@
+$tablets:768px;
+$phones:480px;
+
+
+$z-index-menu:100;
+
+// @import "./src/css/blocks/*.scss";
+@import "./blocks/_media";
+@import "./blocks/base";
+@import "./blocks/_normalize.scss";
+@import "./blocks/_button.scss";
+@import "./blocks/_features.scss";
+@import "./blocks/_footer.scss";
+@import "./blocks/_form.scss";
+@import "./blocks/_header.scss";
+@import "./blocks/_hero.scss";
+@import './blocks/_menu.scss';
+@import "./blocks/_paginator.scss";
+@import "./blocks/_reviewes.scss";
+@import "./blocks/_social.scss";
+@import "./blocks/_radio.scss";
+@import "./blocks/_fixed-menu.scss";
+@import "./blocks/_phone.scss";
+@import "./blocks/_map.scss";
+@import "./blocks/_about.scss";
+@import "./blocks/_hamburger.scss";
+@import "./blocks/_address";
+@import "./blocks/_logo";
+@import "./blocks/_product";
+@import "./blocks/scroll";
+@import "./blocks/parameters-hover";
+@import "./blocks/fullscreen_menu";
+@import "./blocks/_team";
+@import "./blocks/modal";
+@import "./blocks/menu-section";
+@import "./blocks/video";
+
+
+ 

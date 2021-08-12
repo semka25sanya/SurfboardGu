@@ -1,0 +1,24 @@
+.social {
+  margin: 0;
+
+&__link {
+  display: block;
+  text-decoration: 0;
+  width: rem(20px);
+  height: rem(20px);
+  background: center center no-repeat;
+}
+
+&__item {
+display: inline-block;
+vertical-align: middle;
+margin-right: rem(14px);
+
+}
+
+&__network {
+  width: 20px;
+  height: 20px;
+}
+
+}

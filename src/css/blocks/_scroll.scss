@@ -1,0 +1,38 @@
+.left-scroll, .right-scroll {
+  z-index: 1;
+    /* width: 1.8125rem; */
+    // height: .875rem;
+    position: absolute;
+    bottom: 0;
+    top: 50%;
+
+    @include phones {
+top: 30%;
+
+    }
+    
+    
+&-button {
+ text-decoration: none;
+ border: none;
+    padding: 0;
+    cursor: pointer;
+    background: transparent;
+}
+}
+
+.left-scroll {
+  left: 8%;
+  @include phones {
+  left: 2%; 
+        }
+}
+
+.right-scroll {
+  right: 8%;
+  @include phones {
+    right: 2%; 
+          }
+
+}
+

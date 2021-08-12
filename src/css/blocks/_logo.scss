@@ -1,0 +1,12 @@
+.logo {
+  @include tablets {
+    justify-content: flex-start;
+  }
+}
+.logo__img {
+  width: rem(55px);
+  height: rem(40px);
+  @include tablets {
+  margin-top: 70px;
+}
+}

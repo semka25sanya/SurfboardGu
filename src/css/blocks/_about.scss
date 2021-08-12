@@ -1,0 +1,14 @@
+.about {
+  background: url(../../img/header.backgroungd.png) center center/cover no-repeat;
+ height: 100%;
+  @include tablets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+}
+
+
+

@@ -1,0 +1,155 @@
+.features{
+  display: flex;
+  color: #666;
+  
+
+&__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  @include phones{
+    align-items: center;
+    justify-content: center;
+  }
+}
+&__title {
+  font-weight: bold;
+font-size: rem(27px);
+color: #292929;
+
+}
+&__main-title {
+font-weight: bold;
+font-size: rem(48px);
+text-transform: uppercase;
+margin-bottom: rem(17px);
+color: #292929;
+padding-top: rem(102px);
+
+@include phones {
+  margin-bottom: 0;
+}
+
+
+}
+&__text {
+font-size: rem(18px);
+line-height: rem(22px);
+width: rem(436px);
+text-align: center;
+margin-bottom: rem(49px);
+@include phones{
+  padding: 0 rem(20px);
+}
+}
+
+&__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: rem(114px);
+  @include tablets{
+    flex-wrap:nowrap;
+  }
+
+  @include phones {
+    flex-direction: column;
+  }
+}
+
+&__item {
+  display: flex;
+  flex:1;
+  margin: 0 rem(20px);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+
+  @include tablets {
+    margin: 0;
+    margin-right: rem(10px);
+  }
+  @include phones {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+  }
+ &:before {
+   content: url(../img/points.svg);
+   position: absolute;
+   top: rem(60px);
+    right: rem(-20px);
+   transform: translateX(50%);
+@include tablets {
+  display: none;
+}
+@include phones {
+  display: none;
+}
+ }
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+
+    &:before {
+      display: none;
+    }
+  }
+}
+
+&__paragraph{
+font-weight: 300;
+font-size: rem(18px);
+line-height: rem(22px);
+width: rem(279px);
+@include tablets {
+  width: auto;
+}
+@include phones {
+  width: 90%;
+}
+}
+
+&__image-wrapper {
+  display: inline-block;
+  width: rem(126px);
+  height: rem(126px);
+  position: relative;
+  background: #F2F5F4;;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: rem(20px);
+  @include phones {
+    margin-bottom: 0;
+    margin-right: rem(10px);
+  }
+}
+
+&__icon {
+width: rem(68px);
+  height: rem(68px);
+  top: 50%;
+  left: 50%;
+  transform: translate(4%, 40%);
+  margin-bottom: rem(20px);
+   @include phones {
+    transform: translate(40%, 40%);
+   }
+    &:before {
+    content: url(../../img/DgxOuVVhMvw.jpg);
+    position: absolute;
+    top: rem(30px);
+    right: 0;
+
+    
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.video {
+  background: #F8FAF9 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-weight: bold;
+font-size: 48px;
+text-transform: uppercase;
+margin-bottom: 31px;
+  }
+}
+
+.video-player {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  &__splash{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // background: url(../img/video.png) center center/cover no-repeat;
+    cursor: pointer;
+    display:block;
+  }
+  
+  
+  &__bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 35px;
+    background: #404040;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    align-items: center;
+  }
+ &__icon {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 5px;
+ }
+  &__button {
+    width:10px;
+    height: 15px;
+  }
+
+  &__lenght-scale {
+    width: 445px;
+height:7px;
+position: relative;
+ &:before {
+   content: "";
+   height: 4px;
+   position: absolute;
+   top: 50%;
+   left: 0;
+   right: 0;
+   background: #626262;
+   display: block;
+   transform: translateY(-50%);
+ }
+  }
+  &__circle{
+    background: #626262;
+    border-radius: 50px;
+    border: none;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+ left:0;
+  }
+  &__scale-icon {
+    background: #626262;
+   display: block;
+    width: 57px;
+height: 4px;
+margin-top: 1px;
+  }
+&__paused {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: .9;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    &-button {
+      width: 82px;
+    height: 118px;
+    }
+}
+}
+.video-player__icon.video-player__icon--paused {
+  display:block;
+}
+.video-player__icon.video-player__icon--start {
+  display: block;
+}
+.video-player.paused{
+  .video-player__splash{
+    display: none;
+}
+// .video-player__icon.video-player__icon--start {
+//   display: none;
+// }
+.video-player__icon.video-player__icon--paused {
+  display:block;
+}
+}

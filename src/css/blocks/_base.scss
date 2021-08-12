@@ -1,0 +1,79 @@
+html {
+  font-size: rem(16px);
+      @include tablets {
+      font-size: rem(15px);
+    }
+    @include phones {
+      font-size: rem(14px);
+    }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body{
+  
+  font-family: "Alegreya Sans", Helvetica, sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osk-font-smoothing: grayscale;
+position: relative;
+}
+.button {
+cursor: pointer;
+}
+a {
+color: inherit;
+}
+
+* {
+box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  font-weight: normal;
+
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  display: block;
+  // max-width: 100%;
+}
+.section {
+  height: 100%;
+  overflow: hidden;
+}
+.container {
+  // font-size: 18px;
+  max-width: rem(940px);
+  margin: 0 auto;
+  width: 95%;
+  // height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &__content{
+    height: 100%;
+    transition: transform 1s;
+    will-change: transform;
+  }
+}
