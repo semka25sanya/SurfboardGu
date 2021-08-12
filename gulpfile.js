@@ -11,6 +11,8 @@ const gcmq = require('gulp-group-css-media-queries');
 const cleanCSS = require('gulp-clean-css');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
+const svgo = require('gulp-svgo');
+const svgSprite = require('gulp-svgo-sprite');
 const gulpif = require('gulp-if');
 
 const env = process.env.NODE_ENV;

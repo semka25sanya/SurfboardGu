@@ -709,7 +709,7 @@ template {
 }
 
 .form {
-  background: url(../../img/review.background.jpg) center center/cover no-repeat;
+  background: url(../img/review.background.jpg) center center/cover no-repeat;
   color: #FFFFFF;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1402,7 +1402,7 @@ template {
 }
 
 .about {
-  background: url(../../img/header.backgroungd.png) center center/cover no-repeat;
+  background: url(../img/header.backgroungd.png) center center/cover no-repeat;
   height: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -2100,7 +2100,7 @@ template {
 }
 
 .menu-section {
-  background: url(../../img/menuback.png) center center/cover no-repeat;
+  background: url(/src/img/menuback.png) center center/cover no-repeat;
   position: relative;
 }
 .menu-section__title {

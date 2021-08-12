@@ -225,7 +225,7 @@ const init = () => {
 
     draggable: false,
     iconLayout: 'default#image',
-    iconImageHref: "./img/marker.svg",
+    iconImageHref: "./src/img/marker.svg",
     iconImageSize: [30, 42],
     iconImageOffset: [-3, -42]
   });
